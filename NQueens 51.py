@@ -24,4 +24,5 @@ def solveNQueens(n):
     return [decode(ea) for ea in res]
 
 solveNQueens(6)
+
     
