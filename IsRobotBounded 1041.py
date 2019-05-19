@@ -22,3 +22,4 @@ def isRobotBounded(instructions):
     if x == 0 and y == 0:
         return True
     return False
+
