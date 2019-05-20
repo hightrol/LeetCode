@@ -27,3 +27,4 @@ def longestStrChain(words):
                 dp[i] = max(dp[i], dp[j]+1)
     #print(dp)
     return max(dp)
+
