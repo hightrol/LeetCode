@@ -18,4 +18,9 @@ class Solution:
             return maxDownPathSum
         else:
             return 0
+        
+    def maxPathSum(self, root: TreeNode) -> int:
+        self.setUp()
+        _ = self.helper(root)
+        return self._maxSum
     
