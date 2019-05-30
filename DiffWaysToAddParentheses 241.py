@@ -22,4 +22,5 @@ def diffWaysToCompute(inputs):
         total.extend(res)
     return total
 
+
 diffWaysToCompute("2*3-4*5")
