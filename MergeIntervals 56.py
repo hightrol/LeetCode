@@ -17,3 +17,5 @@ def merge(intervals):
         elif ea[1] > last[1]:
             last[1] = ea[1]
     return res
+
+merge([[1,3],[2,6],[8,10],[15,18]])
