@@ -5,7 +5,7 @@ Created on Fri May 31 21:36:14 2019
 @author: haimingwd
 """
 
-def merge(self, intervals):
+def merge(intervals):
     if not intervals:
         return []
     intervals.sort(key = lambda ea:ea[0])
