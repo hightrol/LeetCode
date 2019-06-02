@@ -18,3 +18,5 @@ def numFactoredBinaryTrees(A):
                 s += mul * headSum[j] * headSum[i//j]                       
         headSum[i] = s
     return sum(headSum.values())
+
+numFactoredBinaryTrees([2,3,4,5,6,7,8,9])
