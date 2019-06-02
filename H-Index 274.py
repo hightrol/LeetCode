@@ -17,3 +17,5 @@ def hIndex(citations):
         else:
             r = mid-1
     return l
+
+hIndex([1,2,3,4])
