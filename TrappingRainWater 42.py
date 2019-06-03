@@ -5,9 +5,8 @@ Created on Sun Jun  2 21:44:20 2019
 @author: haimingwd
 """
 
-    
-# For index i, the water volume of i: vol_i = min(left_max_i, right_max_i) - height_i.
-def trap(height)
+def trap(height):
+    # For index i, the water volume of i: vol_i = min(left_max_i, right_max_i) - height_i.
     n = len(height)
     if n < 3:
         return 0
