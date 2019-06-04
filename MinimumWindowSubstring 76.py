@@ -29,3 +29,5 @@ def minWindow(s, t):
             l += 1
         r += 1
     return "" if minL == float('inf') else s[start:(end+1)]
+
+minWindow("ADOBECODEBANC", "ABC")
