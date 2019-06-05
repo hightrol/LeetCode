@@ -5,6 +5,8 @@ Created on Wed Jun  5 19:03:12 2019
 @author: haimingwd
 """
 
+## the Inorder Traversal of a BST should be ordered
+
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -26,7 +28,6 @@ class Solution:
         self.inOrder(p.right)
             
     def recoverTree(self, root: TreeNode) -> None:
-        
         self.first, self.second, self.prev = None, None, TreeNode(float('-inf'))
         self.inOrder(root)
         self.first.val, self.second.val = self.second.val, self.first.val
