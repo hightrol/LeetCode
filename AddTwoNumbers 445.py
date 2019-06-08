@@ -5,10 +5,10 @@ Created on Fri Jun  7 20:03:54 2019
 @author: haimingwd
 """
 
-#class ListNode(object):
-#    def __init__(self, x):
-#        self.val = x
-#        self.next = None
+class ListNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.next = None
 
 def addTwoNumbers(self, l1, l2):
     stack1, stack2, stack3 = [], [], []
