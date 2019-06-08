@@ -24,3 +24,5 @@ def networkDelayTime(times, N, K):
         for j in T:
             dist[j] = min( dist[j], dist[i] + mtx[i][j] )
     return max(dist)
+
+networkDelayTime([[2,1,1],[2,3,1],[3,4,1]], 4, 2)
