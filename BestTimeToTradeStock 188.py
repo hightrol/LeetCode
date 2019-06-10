@@ -22,4 +22,6 @@ def maxProfit(k, prices):
             res2 = max( res2 + ret[i], res1[i-1] + ret[i] )
             res3[i+1] = max(res3[i], res2)
         return res3
-    return helper(k)[-1] 
+    return helper(k)[-1]
+
+maxProfit(2, [1,3,4,6,2,9,2,4,6])
