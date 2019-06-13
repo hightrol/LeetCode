@@ -40,3 +40,11 @@ def findKthSmallest(K, list1, list2):
                 return findKthSmallest(K-(n1//2), list1[(n1//2):], list2)
             else:
                 return findKthSmallest(K, list1, list2[:(n2//2)])
+                
+def findMedianSortedArrays(nums1, nums2): 
+    n1, n2 = len(nums1), len(nums2)
+    if (n1+n2) % 2 == 0:
+        x, y = findKthSmallest( (n1+n2)//2, nums1, nums2 ), findKthSmallest( (n1+n2)//2-1, nums1, nums2 )
+        return (x+y)/2.0
+    else:
+        return findKthSmallest( (n1+n2)//2, nums1, nums2 )
