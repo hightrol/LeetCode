@@ -48,3 +48,5 @@ def findMedianSortedArrays(nums1, nums2):
         return (x+y)/2.0
     else:
         return findKthSmallest( (n1+n2)//2, nums1, nums2 )
+    
+findMedianSortedArrays([1,3,4], [2,3,5,6])
