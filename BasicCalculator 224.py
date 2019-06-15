@@ -30,3 +30,5 @@ def calculate(s):
         else:
             i += 1
     return res
+
+calculate("-(1-(4+5+2)-13)+(6+8)")
