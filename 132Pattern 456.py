@@ -21,3 +21,5 @@ def find132pattern(nums):
             intervalStack.append([start, end])
         #print(intervalStack)
     return False
+
+find132pattern([3, 5, 2, -1, -3, 1, 4])
