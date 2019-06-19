@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Jun 16 22:28:40 2019
+Created on Tue Jun 18 21:12:06 2019
 
 @author: haimingwd
 """
 
+## Task Scheduler
 def leastInterval(tasks, n):
     counts = [tasks.count(s) for s in set(tasks)]
     M = max(counts)
