@@ -20,3 +20,5 @@ def advantageCount(A, B):
             C[B_ix[k]] = A[i]
             k -= 1
     return C
+
+advantageCount([12,24,8,32], [13,25,32,11])
