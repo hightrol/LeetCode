@@ -21,3 +21,5 @@ def splitArray(nums, m):
         else:
             r = mid
     return l
+
+splitArray([1,6,5,6],3)
