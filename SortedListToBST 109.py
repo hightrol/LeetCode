@@ -27,44 +27,44 @@ class Solution(object):
         :type head: ListNode
         :rtype: TreeNode
         """
-        # #recursive without list
-        # if not head:
-        #     return None
-        # p1 = p2 = p3 =head
-        # while p1.next and p2.next and p2.next.next:
-        #     p3 = p1
-        #     p1 = p1.next
-        #     p2 = p2.next.next
-        # tn = TreeNode(p1.val)
-        # if p1 != p3:
-        #     p3.next = None
-        #     tn.left = self.sortedListToBST(head)
-        #     tn.right = self.sortedListToBST(p1.next)
-        # else:
-        #     tn1 = TreeNode(p1.next.val) if p1.next else None
-        #     tn.right = tn1
-        # return tn    
-        
-        arr = []
-        p = head
-        while p:
-            arr.append(p.val)
-            p = p.next
-        n = len(arr)
-        if not arr:
+        #recursive without list
+        if not head:
             return None
-        def makeBST(low, high):
-            if low == high:
-                return TreeNode(arr[low])
-            elif high - low == 1:
-                tn1 = TreeNode(arr[low])
-                tn = TreeNode(arr[high])
-                tn.left = tn1
-                return tn
-            else:
-                mid = (low+high)/2
-                tn1, tn2 = makeBST(low, mid-1), makeBST(mid+1, high)
-                tn = TreeNode(arr[mid])
-                tn.left, tn.right = tn1, tn2
-                return tn
-        return makeBST(0, n-1)
+        p1 = p2 = p3 =head
+        while p1.next and p2.next and p2.next.next:
+            p3 = p1
+            p1 = p1.next
+            p2 = p2.next.next
+        tn = TreeNode(p1.val)
+        if p1 != p3:
+            p3.next = None
+            tn.left = self.sortedListToBST(head)
+            tn.right = self.sortedListToBST(p1.next)
+        else:
+            tn1 = TreeNode(p1.next.val) if p1.next else None
+            tn.right = tn1
+        return tn    
+        
+#        arr = []
+#        p = head
+#        while p:
+#            arr.append(p.val)
+#            p = p.next
+#        n = len(arr)
+#        if not arr:
+#            return None
+#        def makeBST(low, high):
+#            if low == high:
+#                return TreeNode(arr[low])
+#            elif high - low == 1:
+#                tn1 = TreeNode(arr[low])
+#                tn = TreeNode(arr[high])
+#                tn.left = tn1
+#                return tn
+#            else:
+#                mid = (low+high)/2
+#                tn1, tn2 = makeBST(low, mid-1), makeBST(mid+1, high)
+#                tn = TreeNode(arr[mid])
+#                tn.left, tn.right = tn1, tn2
+#                return tn
+#        return makeBST(0, n-1)
