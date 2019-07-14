@@ -27,3 +27,5 @@ def videoStitching(clips, T):
         if maxLen >= T:
             return ans[T]
     return -1
+
+videoStitching([[0,2],[4,6],[8,10],[1,9],[1,5],[5,9]], 10)
