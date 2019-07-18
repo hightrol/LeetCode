@@ -19,4 +19,5 @@ def maxTurbulenceSize(A):
             length += 1
         maxLen = max(maxLen, length)
     return maxLen
+
 maxTurbulenceSize([9,4,2,10,7,8,8,1,9])
